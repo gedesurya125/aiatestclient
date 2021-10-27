@@ -1,0 +1,4 @@
+export const GET_IMAGES = "GET_IMAGES";
+export const SET_IMAGES = "SET_IMAGES";
+export const SET_LOADING_IMAGES = "SET_LOADING_IMAGES";
+export const UNSET_LOADING_IMAGES = "UNSET_LOADING_IMAGES";

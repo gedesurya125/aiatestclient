@@ -17,7 +17,7 @@ const flickrImageReducer = (state= initialState, action) => {
   switch(action.type){
     case type.SET_IMAGES: return {
       ...state,
-      data: action.payload
+      data: action.payload.data
     };
     case type.SET_LOADING_IMAGES: return {
       ...state,

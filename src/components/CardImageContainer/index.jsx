@@ -54,7 +54,7 @@ const CardImageContainer = ({ imageData, page, pageSize, loading }) => {
     //   className="my-masonry-grid"
     //   columnClassName="my-masonry-grid_column"
     // >
-    <Box width="100%" display="flex" gap="16px" flexWrap="wrap" padding='1em' justifyContent="center" alignItems="start">{renderImageCard()}</Box>
+    <Box data-testid="card-image-container" width="100%" display="flex" gap="16px" flexWrap="wrap" padding='1em' justifyContent="center" alignItems="start">{renderImageCard()}</Box>
     // </Masonry>
   );
 };

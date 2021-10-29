@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`to matches snapshot 1 1`] = `
+<div
+  className="css-1mk82ib"
+  data-testid="tags-container"
+>
+  <div
+    className="css-1ebnpkz"
+  >
+    super
+  </div>
+  <div
+    className="css-1ebnpkz"
+  >
+    cool
+  </div>
+  <div
+    className="css-1ebnpkz"
+  >
+    okay
+  </div>
+</div>
+`;

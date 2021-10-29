@@ -43,12 +43,12 @@ const ExpandMoreIconAnimated = styled((props) => {
 }));
 
 const DescriptionContainer = styled("div")(({ theme }) => ({
-  "& p:first-of-type":{
-    textAlign: 'center',
-    fontWeight: 'bold'
+  "& p:first-of-type": {
+    textAlign: "center",
+    fontWeight: "bold",
   },
-  "& p:first-of-type > a":{
-    textDecoration: 'none'
+  "& p:first-of-type > a": {
+    textDecoration: "none",
   },
   "& p > a > img": {
     // textAlign: 'center',
@@ -67,27 +67,28 @@ const CardImage = ({ imageDetails }) => {
   const author = findAuthor(imageDetails.author);
   // console.log('ini authornya', author);
 
-
   useEffect(() => {
     return () => {
       setExpanded(false);
-    }
-  },[imageDetails])
+    };
+  }, [imageDetails]);
   return (
-    <Card sx={{ 
-      width: {
-        xs: '90%',
-        sm: '43%',
-        md: '23%'
-      }
-     }}>
+    <Card
+      data-testid="image-card"
+      sx={{
+        width: {
+          xs: "90%",
+          sm: "43%",
+          md: "23%",
+        },
+      }}
+    >
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: blue[500] }} aria-label="recipe">
             {author[0].toUpperCase()}
           </Avatar>
         }
-        
         title={<Typography fontWeight="bold">{author}</Typography>}
         subheader={formatDate(imageDetails.date_taken)}
       />
@@ -102,29 +103,37 @@ const CardImage = ({ imageDetails }) => {
       </CardContent>
       <CardActions disableSpacing>
         <Button
+          data-testid="show-more-button"
           size="small"
           fullWidth
           color="primary"
           onClick={handleExpandClick}
           endIcon={
-
-              <ExpandMoreIconAnimated
-                expand={expanded}
-                aria-expanded={expanded}
-                aria-label="show more"
-              />
+            <ExpandMoreIconAnimated
+              expand={expanded}
+              aria-expanded={expanded}
+              aria-label="show more"
+            />
           }
         >
-          Show More
+          Show Detail
         </Button>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <DescriptionContainer
+            data-testid="card-description"
             dangerouslySetInnerHTML={{ __html: imageDetails.description }}
           ></DescriptionContainer>
-          <Typography marginTop="1em" align="center" fontWeight="bold" gutterBottom>Tags:</Typography>
-          <TagsContainer tagArray={imageDetails.tags.split(' ')}/>
+          <Typography
+            marginTop="1em"
+            align="center"
+            fontWeight="bold"
+            gutterBottom
+          >
+            Tags:
+          </Typography>
+          <TagsContainer tagArray={imageDetails.tags.split(" ")} />
         </CardContent>
       </Collapse>
     </Card>

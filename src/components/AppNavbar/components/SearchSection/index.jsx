@@ -20,17 +20,20 @@ const SearchSection = () => {
 
   const handleSearchByTags = () => {
     // console.log('INI SEARCH PATTERN', searchPattern);
-    dispatch(getFlickrImagesByTagsAction(searchPattern))
-  }
+    dispatch(getFlickrImagesByTagsAction(searchPattern));
+  };
   return (
-    <SearchSectionContainer sx={{
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: '1em',
-      display: 'flex',
-      
-    }}>
+    <SearchSectionContainer
+      data-testid = "search-input-container"
+      sx={{
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "1em",
+        display: "flex",
+      }}
+    >
       <TextField
+        data-testid="search-input"
         fullWidth
         value={searchPattern}
         onChange={handleChangeSearchPattern}
@@ -48,11 +51,11 @@ const SearchSection = () => {
           "& .MuiOutlinedInput-root": {
             paddingRight: 0,
             color: "inherit",
-            '& fieldset': {
-              borderColor: '#658DAE',
+            "& fieldset": {
+              borderColor: "#658DAE",
             },
-            '&:hover fieldset': {
-              borderColor: '#658DAE',
+            "&:hover fieldset": {
+              borderColor: "#658DAE",
             },
             // '&.Mui-focused fieldset': {
             //   borderColor: 'yellow',
@@ -60,7 +63,9 @@ const SearchSection = () => {
           },
         }}
       />
-      <Button onClick={handleSearchByTags} variant="contained">Search</Button>
+      <Button onClick={handleSearchByTags} variant="contained">
+        Search
+      </Button>
     </SearchSectionContainer>
   );
 };

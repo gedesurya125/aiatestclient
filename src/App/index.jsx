@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getFlickrImagesAction } from "../redux/actions/flickrImagesActions";
 import AppNavbar from "../components/AppNavbar";
 import CardImageContainer from "../components/CardImageContainer";
-import { StyledApp, AppHeader, AppMain, AppFooter } from "./StyledApp";
+import { StyledApp, AppHeader, AppMain } from "./StyledApp";
 import { Toolbar, Typography } from "@mui/material";
 // import { BrowserRouter as router, Switch, Route } from "react-router-dom";
 import Pagination from "@mui/material/Pagination";
@@ -53,12 +53,12 @@ function App() {
   }, [dispatch]);
 
   return (
-    <StyledApp>
-      <AppHeader>
+    <StyledApp data-testid = "app">
+      <AppHeader data-testid = "app-header">
         <AppNavbar />
       </AppHeader>
 
-      <AppMain>
+      <AppMain data-testid = "app-main">
         <Toolbar sx={{
           height: {
             xs: '130px',
@@ -74,8 +74,6 @@ function App() {
 
         {renderPaginationLinks()}
       </AppMain>
-
-      <AppFooter></AppFooter>
     </StyledApp>
   );
 }

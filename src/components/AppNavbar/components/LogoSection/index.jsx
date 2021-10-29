@@ -16,8 +16,8 @@ const LogoSectionContainer = styled('div')(
 
 const LogoSection = () => {
   return (
-    <LogoSectionContainer>
-      <img src={logo} alt="..."/>
+    <LogoSectionContainer data-testid="logo-section">
+      <img data-testid="image" src={logo} alt="..."/>
     </LogoSectionContainer>
   )
 }

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matcher snapshot 1 1`] = `
+<div
+  className="css-1yd8edg"
+  data-testid="logo-section"
+>
+  <img
+    alt="..."
+    data-testid="image"
+    src="logoWhite.svg"
+  />
+</div>
+`;

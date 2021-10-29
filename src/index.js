@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import {CssBaseline} from '@mui/material'
-import './index.css'
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>

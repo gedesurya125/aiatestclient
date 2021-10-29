@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches snapshot 1 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-cqbc8s-MuiPaper-root-MuiCard-root"
+  data-testid="image-card"
+>
+  <div
+    className="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+  >
+    <div
+      className="MuiCardHeader-avatar css-1ssile9-MuiCardHeader-avatar"
+    >
+      <div
+        aria-label="recipe"
+        className="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-4vb5ob-MuiAvatar-root"
+      >
+        O
+      </div>
+    </div>
+    <div
+      className="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root"
+      >
+        oitilkte61
+      </p>
+      <span
+        className="MuiTypography-root MuiTypography-body2 MuiCardHeader-subheader css-83ijpv-MuiTypography-root"
+      >
+        December NaN, NaN
+      </span>
+    </div>
+  </div>
+  <img
+    alt="Paella dish"
+    className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+    height="194"
+    src="https://live.staticflickr.com/65535/51634513532_a11d09dfa7_m.jpg"
+  />
+  <div
+    className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1uwgr7b-MuiTypography-root"
+    >
+      Mmm
+    </p>
+  </div>
+  <div
+    className="MuiCardActions-root css-1rwjz6-MuiCardActions-root"
+  >
+    <button
+      className="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-fullWidth MuiButtonBase-root css-ua5ybo-MuiButtonBase-root-MuiButton-root"
+      data-testid="show-more-button"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      Show Detail
+      <span
+        className="MuiButton-endIcon MuiButton-iconSizeSmall css-155nyw6-MuiButton-endIcon"
+      >
+        <svg
+          aria-expanded={false}
+          aria-hidden={true}
+          aria-label="show more"
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1lcim9z-MuiSvgIcon-root"
+          data-testid="ExpandMoreIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+</div>
+`;

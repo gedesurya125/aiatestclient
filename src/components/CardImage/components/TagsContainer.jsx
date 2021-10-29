@@ -16,8 +16,9 @@ const StyledTag = styled("div")(({ theme }) => ({
 }));
 
 const TagsContainer = ({ tagArray }) => {
+  // console.log('TAG ARRAY',tagArray);
   const renderTags = () => {
-    if (tagArray.length === 0) {
+    if (tagArray.length === 0 || tagArray[0]==='') {
       return null;
     }
     return tagArray.map((tag, index) => (
@@ -25,7 +26,7 @@ const TagsContainer = ({ tagArray }) => {
     ));
   };
 
-  return <TagsContainerRoot>{renderTags()}</TagsContainerRoot>;
+  return <TagsContainerRoot data-testid="tags-container">{renderTags()}</TagsContainerRoot>;
 };
 
 export default TagsContainer;
